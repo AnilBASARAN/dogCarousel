@@ -12,7 +12,7 @@ const IMAGE_URLS = [
 ];
 
 const App = () => {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(2);
   const [isActiveRight, setIsActiveRight] = useState(true);
   const [isActiveLeft, setIsActiveLeft] = useState(true);
   
