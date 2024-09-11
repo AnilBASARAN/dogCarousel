@@ -51,7 +51,7 @@ const App = () => {
 
         <button
           onClick={() => {
-            if (number < 4) {
+            if (number < IMAGE_URLS.length-1) {
               setNumber(number + 1);
               setIsActiveLeft(true);
             } else {
