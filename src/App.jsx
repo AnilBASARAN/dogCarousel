@@ -2,14 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'; // Importing specific icons
 import './App.css';
 import { useState } from "react";
+import images from "./images"
 
-const IMAGE_URLS = [
-  "https://static-task-assets.react-formula.com/711612.jpg",
-  "https://static-task-assets.react-formula.com/607528.jpg",
-  "https://static-task-assets.react-formula.com/714109.jpg",
-  "https://static-task-assets.react-formula.com/331987.jpg",
-  "https://static-task-assets.react-formula.com/990651.jpg",
-];
 
 const App = () => {
   const [number, setNumber] = useState(2);
@@ -45,13 +39,13 @@ const App = () => {
 
         <img
           className="h-[350px] w-[300px] m-4 object-cover"
-          src={IMAGE_URLS[number]}
+          src={images[number]}
           alt=""
         />
 
         <button
           onClick={() => {
-            if (number < IMAGE_URLS.length-1) {
+            if (number < images.length-1) {
               setNumber(number + 1);
               setIsActiveLeft(true);
             } else {
